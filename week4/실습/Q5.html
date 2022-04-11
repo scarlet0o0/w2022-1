@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <h2>이메일 쓰기</h2>
+    <table>
+        <tr>
+            <th>아이디</th>
+            <td><input type="text" name="UserID" value="" /></td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="text" name="UserPW" value="" /></td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td><input type='email' id='user-email'><br></td>
+        </tr>
+        <tr>
+            <th>휴대폰</th>
+            <td>
+                <select name="year">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="031">031</option>
+                </select>
+                - <input type='tel' id='user-phone' style="width:50px"> -
+                <input type='tel' id='user-phone' style="width:50px"><br>
+            </td>
+        </tr>
+        <tr>
+            <th><label for='t'><b>내용</b></label></th>
+            <td>
+                <textarea cols='30' rows='10'></textarea><br>
+                <input type='button' value='취소' />
+                <input type='button' value='전송' />
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
