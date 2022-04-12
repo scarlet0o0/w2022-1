@@ -3,7 +3,7 @@
 
 ## 목차
 
-- [week2](https://github.com/scarlet0o0/w2022-1/tree/main/week2) : HTML 실습1
+- [week2 : HTML 실습1](https://github.com/scarlet0o0/w2022-1/tree/main/week2)
 - [week3 : HTML 실습2](https://github.com/scarlet0o0/w2022-1/tree/main/week3)
 - [week4 : HTML + CSS 실습1](https://github.com/scarlet0o0/w2022-1/tree/main/week4)
 - [week5 : HTML + CSS 실습2](https://github.com/scarlet0o0/w2022-1/tree/main/week5)
