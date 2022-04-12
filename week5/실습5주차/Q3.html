@@ -1,33 +1,45 @@
 <!DOCTYPE html>
+
 <head>
     <style>
-        thead th{
+        thead th {
             color: red;
             border-style: none;
             font-size: 30px;
         }
-         td, th {
-  border : 1px solid black;
-  border-collapse : collapse;
-  width: 800px;
-};
-tbody tr:nth-child(1){
-    background-color: green;
-    color: white;
-    text-align: center;
-}
-#q{
-    background-color: green;
-    color: white;
-    text-align: center;
-}
+
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        ;
+
+        tbody tr:nth-child(1) {
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+
+        #q {
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
-        <table >
-            <thead><tr><th colspan="4">교재주문</th></tr></thead>
-            <tbody >
-                <tr id="q">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">교재주문</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="q">
                 <th>전공서적</th>
                 <th>가격</th>
                 <th>수량</th>
@@ -37,36 +49,37 @@ tbody tr:nth-child(1){
                 <td>자바프로그래밍</td>
                 <td style="text-align: end;">34,000원</td>
                 <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px"/></td>
-            
+                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
+
             </tr>
             <tr>
                 <td>파이썬</td>
                 <td style="text-align: end;">9,500원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0"/></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0"style="width:50px"/></td>
-                
+                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
+                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
+
             </tr>
             <tr>
                 <td>이산수학</td>
                 <td style="text-align: end;">12,000원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0"/></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0"style="width:50px"/></td>
+                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
+                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
             </tr>
             <tr>
                 <td>웹프로그래밍</td>
                 <td style="text-align: end;">50,000원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0"/></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0"style="width:50px"/></td>
+                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
+                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
             </tr>
         </tbody>
-        </table>
-        <br>
-        <input type='button' value='계산'/>
-        <input type='button' value='구매'/>
-        <input type='button' value='초기화'/>
-        <br>
-        <a href="" style="text-decoration: linen;">메인페이지로 이동</a>
-    
+    </table>
+    <br>
+    <input type='button' value='계산' />
+    <input type='button' value='구매' />
+    <input type='button' value='초기화' />
+    <br>
+    <a href="" style="text-decoration: linen;">메인페이지로 이동</a>
+
 </body>
+
 </html>
