@@ -5,5 +5,5 @@
 >- week3 : HTML 실습2
 >- week4 : HTML + CSS 실습1
 >- week5 : HTML + CSS 실습2
->- week6
+>- week6 : HTML + CSS 실습3
 >- week7
