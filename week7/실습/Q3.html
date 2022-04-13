@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>실습문제3</title>
+</head>
+
+<body>
+    <script>
+        function adder(a) {
+            sum = 0;
+            for (var i = 1; i < 10; i++) {
+                sum += i*a;
+            }
+            return sum; // 덧셈 합 리턴
+        }
+        var n = parseInt(prompt("출력할 구구단을 입력하세요."));
+        var size = 10;
+        for (var i = 1; i < 10; i++) {
+            document.write("<span ");
+            document.write("style='font-size:" + size + "px'>");
+            document.write(n + " * " + i + " = " + i * n);
+            document.write("</span>");
+
+            size += 5;
+            document.write("<br>");
+        }
+        var sum = adder(n);
+        document.write("<hr>");
+        document.write("<span ");
+        document.write("style='font-size:" + (size-5) + "px'>");
+        document.write("각 구간별 결과값의 총합= " + sum);
+        document.write("</span>");
+
+    </script>
+
+</body>
+
+</html>

@@ -7,7 +7,31 @@
 
 <body>
     <script>
+        //□□●◆
+        var n = parseInt(prompt("출력할 행 수를 입력하세요."));
+        var h = prompt("연속적으로 기호를 4개 입력하세요.");
+        for (var i = 0; i < n; i++) {
+            document.write(h[0]);
+        }
+        document.write("<br>");
+        for(var j=0;j<n-2;j++){
+            document.write(h[1]);
+            for (var i = 0; i < n-2; i++) {
+                document.write("&nbsp;&nbsp;&nbsp;");
+                
+            }
+            document.write(h[2]);
+            document.write("<br>");
+        }
+        
+        for (var i = 0; i < n; i++) {
+            document.write(h[3]);
+        }
+        document.write("<br>");
+            
+
     </script>
+
 </body>
 
 </html>
