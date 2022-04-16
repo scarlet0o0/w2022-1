@@ -1,75 +1,75 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <style>
-        thead th {
+        caption {
             color: red;
-            border-style: none;
-            font-size: 30px;
+            font-size: 20px;
         }
 
-        td,
-        th {
+        thead {
+            background-color: green;
+            color: white;
+        }
+
+        table {
             border: 1px solid black;
             border-collapse: collapse;
-            width: 800px;
+            width: 700px;
         }
 
-        ;
-
-        tbody tr:nth-child(1) {
-            background-color: green;
-            color: white;
-            text-align: center;
+        .h2 {
+            text-align: end;
         }
 
-        #q {
-            background-color: green;
-            color: white;
+        th,
+        td {
+            padding: 3px;
+            border: 1px solid black;
             text-align: center;
+
         }
     </style>
 </head>
 
 <body>
     <table>
+        <caption>교재주문</caption>
         <thead>
             <tr>
-                <th colspan="4">교재주문</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr id="q">
                 <th>전공서적</th>
                 <th>가격</th>
                 <th>수량</th>
                 <th>합계</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>자바프로그래밍</td>
-                <td style="text-align: end;">34,000원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
+                <td class="h2">34,000원</td>
+                <td class="h3"><input type="text" name="수량" value="0" /></td>
+                <td class="h4"><input type="text" name="합계" value="0" style="width:50px" /></td>
 
             </tr>
             <tr>
                 <td>파이썬</td>
-                <td style="text-align: end;">9,500원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
+                <td class="h2">9,500원</td>
+                <td class="h3"><input type="text" name="수량" value="0" /></td>
+                <td class="h4"><input type="text" name="합계" value="0" style="width:50px" /></td>
 
             </tr>
             <tr>
                 <td>이산수학</td>
-                <td style="text-align: end;">12,000원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
+                <td class="h2">12,000원</td>
+                <td class="h3"><input type="text" name="수량" value="0" /></td>
+                <td class="h4"><input type="text" name="합계" value="0" style="width:50px" /></td>
             </tr>
             <tr>
                 <td>웹프로그래밍</td>
-                <td style="text-align: end;">50,000원</td>
-                <td style="text-align: center;"><input type="text" name="수량" value="0" /></td>
-                <td style="text-align: center;"><input type="text" name="합계" value="0" style="width:50px" /></td>
+                <td class="h2">50,000원</td>
+                <td class="h3"><input type="text" name="수량" value="0" /></td>
+                <td class="h4"><input type="text" name="합계" value="0" style="width:50px" /></td>
             </tr>
         </tbody>
     </table>
