@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>문서 객체 삽입(2)</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var content = [
+                {name:'홍길동', region:'서울시 광진구'},
+                {name:'이단아', region:'경기도 남양주'},
+                {name:'박두길', region:'강원도 춘천'}
+            ];
+            
+            $('div').append(function(index){
+                var item = content[index];
+                var output='';
+                output += '<h1>'+item.name+'</h1>';
+                output += '<h2>'+item.region+'</h2>';
+
+                return output
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

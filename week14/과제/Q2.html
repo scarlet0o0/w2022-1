@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2</title>
+    <style>
+        .reverse {
+            background: black;
+            color: white;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').hover(function () {
+                $(this).addClass('reverse');
+            }, function () {
+                $(this).removeClass('reverse');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+</body>
+
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>문서 객체의 스타일 검사</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var color = $('h1').css('color');
+            alert(color);
+        });
+    </script>
+    <style>
+        .first{color:red;}
+        .second{color:rgb(255,0,0);}
+        .third{color:orange;}
+    </style>
+</head>
+<body>
+    <h1 class="first">Header-0</h1>
+    <h1 class="second">Header-1</h1>
+    <h1 class="third">Header-2</h1>
+</body>
+</html>

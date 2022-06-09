@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>문서 객체의 속성 추가(3)</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').attr({
+                width:function(index){ return (index+1)*100;},
+                height:100
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="위대한 쇼맨.jpg">
+    <img src="라라랜드.jpg">
+    <img src="레미제라블.jpg">
+</body>
+</html>

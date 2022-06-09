@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>실습문제3</title>
+    <style>
+        div{
+            border: 3px solid white;
+            background-color: orange;
+            width: 200px;
+        }
+    </style>
+    <script>
+        var p;
+        function init() { // 문서가 완전히 로드되었을 때 호출
+            p = document.getElementById("p");
+            p.onmouseover = over; // over()를 onmouseover 리스너로 등록
+            p.onmouseout = out; // out()를 onmouseout 리스너로 등록
+        }
+        function over() {
+            p.style.border=" 3px solid red";
+        }
+        function out() {
+            p.style.border="3px solid white";
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <hr>
+    <div id="p">텍스트 위에 마우스를 올리면 
+        테두리 선이 보입니다</div>
+</body>
+
+</html>

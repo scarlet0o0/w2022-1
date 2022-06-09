@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3</title>
+    <script>
+        function checkFilled() {
+            var obj = document.getElementById("name");
+            if (obj.value.length < 6 || obj.value.length > 8) {
+                alert("6문자와 8문자 사이로 입력해주세요!");
+            }
+        }
+    </script>
+</head>
+
+<body onload="document.getElementById('name').focus();">
+    <form>
+        이름(6~8문자): <input type="text" id="name">
+        <input type="button" value="확인" onclick="checkFilled()">   
+    </form>
+</body>
+
+</html>

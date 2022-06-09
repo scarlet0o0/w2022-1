@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 이벤트 연결
+            $('h1').click(function () {
+                // 출력
+                $(this).html('CLICK');
+                alert('이벤트가 발생했습니다.');
+                // 이벤트 제거
+                $(this).off();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+</body>
+
+
+</html>

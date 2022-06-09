@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>실습문제1</title>
+</head>
+
+<body>
+    <script>
+        //□□●◆
+        var name = prompt("이름을 입력하세요");
+        var n1 = parseInt(prompt("[수학] 중간성적을 입력하세요"));
+        var n2 = parseInt(prompt("[수학] 기말성적을 입력하세요"));
+        var hap = n1 + n2;
+        var a = hap/2;
+        var b = 'F';
+        if(a <= 97  && a >= 93){
+            b = 'A';
+        }
+        else if(a <= 87 && a >= 83){
+            b = 'B';
+        }
+        else if(a <= 77 && a >= 73){
+            b = 'C';
+        }
+        else if(a <= 67 && a >= 63){
+            b = 'D';
+        }
+        else{
+            b = 'F';
+        }
+        document.write("성명:"+name+"<br>");
+        document.write("중간성적:"+n1+"<br>");
+        document.write("기말성적:"+n2+"<br>");
+        document.write("총점:"+hap+"<br>");
+        document.write("평균:"+a+"<br>");
+        document.write("학점:"+b+"<br>");
+            
+
+    </script>
+
+</body>
+
+</html>

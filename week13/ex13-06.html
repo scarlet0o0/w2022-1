@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 예제</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            for(var i = 0;i<256;i++){
+                $('<div>').css({
+                    height:2,
+                    background:'rgb('+i+','+i+','+i+')'
+                }).appendTo('body');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>실습문제4</title>
+    <style>
+        button {
+            background-color: gray;
+            border-radius: 15px;
+            color: black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <button id ="d" onmousedown="f()" onmouseup="c()">버튼을 눌러보세요</button>
+    <script>
+        var d = document.getElementById("d");
+        function f() { // e는 현재 발생한 이벤트 객체
+            d.style.backgroundColor="green";
+            d.style.color="white";
+        }
+        function c() { // e는 현재 발생한 이벤트 객체
+            d.style.backgroundColor="gray";
+            d.style.color="black";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>문제3</title>
+    <style>
+        div {
+            width: 8em;
+            height: 8em;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        var colors = ['red','green','blue'];
+        var currentColor = 0;
+        $(document).ready(function () {
+        $('div').css({
+            backgroundColor:colors[currentColor]
+        }).click(function(){
+                currentColor = (currentColor + 1) %3
+                $(this).css({
+                    backgroundColor:colors[currentColor]
+                })
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <div>클릭</div>
+
+</body>
+
+</html>

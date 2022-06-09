@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>문제2</title>
+    <style>
+        button{
+            background-color: green;
+            padding: 3em;
+            border: 1px solid green;
+            border-radius: 15px 15px;
+            color: white;
+            opacity: 0.8;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').hover(function () { 
+                $(this).css('opacity', '0.1'); },
+                function () {
+                    $(this).css('opacity', '0.8');
+                });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <button id='bu'>버튼</button>
+
+</body>
+
+</html>

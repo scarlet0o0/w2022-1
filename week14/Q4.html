@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>문제4</title>
+    <style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () { 
+                var txt = "이제부터 자바스크립트를 공부합니다 !</p>"
+                txt = txt + "<br><hr>";
+                txt = txt + "<img src='logo.png' width= 100 height=50/> <hr>";
+                txt = txt + "<p> 즐겁게 열심히 합시다!</p>";
+                $('#p1').html(txt); 
+                }
+               );
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <h2>Web Programming!</h2>
+    <p id="p1">지금까지 HTML과 CSS를 공부했습니다.</p>
+    
+    <button id="b1">Next</button>
+    
+
+</body>
+
+</html>

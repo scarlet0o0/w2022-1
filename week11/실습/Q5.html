@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>5</title>
+    <script>
+        function checkFilled() {
+            var obj = document.getElementById("과일");
+            if (obj.value == "0") {
+                alert("하나를 선택하여야 합니다.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        과일선택
+        <select id="과일">
+            <option value="0">선택하세요</option>
+            <option value="1">사과</option>
+            <option value="2">배</option>
+            <option value="3">바나나</option>
+        </select>
+        <input type="button" value="확인" onclick="checkFilled()">   
+    </form>
+</body>
+
+</html>

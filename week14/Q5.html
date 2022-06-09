@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>문제5</title>
+    <style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b").click(function () {
+                var txt = $('#t1').val();
+                $("#t2").append($('<li></li>').html(txt));    
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    여행하고 싶은 지역:<input id="t1" type="text"><input id='b' type="button" value="추가"><br>
+    <ol id="t2"></ol>
+</body>
+
+</html>

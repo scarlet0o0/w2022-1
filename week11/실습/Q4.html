@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>4</title>
+    <script>
+        function checkFilled() {
+            var regexp = /^[0-9]*$/
+            var obj = document.getElementById("name");
+            if( !regexp.test(obj.value) ) {
+                alert("숫자만 입력하세요");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        전화번호(-없이 입력): <input type="text" id="name">
+        <input type="button" value="확인" onclick="checkFilled()">   
+    </form>
+</body>
+
+</html>

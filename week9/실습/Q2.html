@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>실습문제2</title>
+</head>
+
+<body>
+    <script>
+        function print() {
+            document.write("성명:" + this.name + "<br>");
+            document.write("중간성적:" + this.n1 + "<br>");
+            document.write("기말성적:" + this.n2 + "<br>");
+            document.write("총점:" + this.hap + "<br>");
+            document.write("평균:" + this.a + "<br>");
+            document.write("학점:" + this.b + "<br>");
+        }
+        function Calculation_of_grades() {
+            if (97 >= this.a && this.a >= 93) {
+                this.b = 'A';
+            }
+            else if (87 >= this.a && this.a >= 83) {
+                this.b = 'B';
+            }
+            else if (77 >= this.a && this.a >= 73) {
+                this.b = 'C';
+            }
+            else if (67 >= this.a && this.a >= 63) {
+                this.b = 'D';
+            }
+            else {
+                this.b = 'F';
+            }
+        }
+        function hap(n1,n2) {
+            return n1 + n2;
+        }
+
+        var eScore = new Object();
+        eScore.name = prompt("이름을 입력하세요");
+        eScore.n1 = parseInt(prompt("[수학] 중간성적을 입력하세요"));
+        eScore.n2 = parseInt(prompt("[수학] 기말성적을 입력하세요"));
+        eScore.hap = hap;
+        eScore.hap = eScore.hap(eScore.n1,eScore.n2);
+        eScore.a = eScore.hap / 2;
+        eScore.b = 'F';
+        eScore.print = print; 
+        eScore.Calculation_of_grades = Calculation_of_grades;
+
+        eScore.Calculation_of_grades();
+        eScore.print();
+
+    </script>
+
+</body>
+
+</html>

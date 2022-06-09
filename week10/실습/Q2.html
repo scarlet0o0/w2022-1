@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>실습문제2</title>
+    <script>
+        function checkFilled(obj) {
+            var p = document.getElementById("name");
+            obj.value = p.value.toLowerCase();
+        }
+
+    </script>
+</head>
+
+<body>
+    영문 문자열을 입력하세요: <input  type="text" value="" id="name" onblur="checkFilled(this)">
+    <br>입력폼을 벗어나면 영문자가 모두 소문자로 변경됩니다.
+</body>
+
+</html>

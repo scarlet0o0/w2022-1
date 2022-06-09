@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2</title>
+    <script>
+        function cli(){
+            var arr = [30, 22, 46,28];
+            var v = document.getElementsByClassName("N1");
+            var v1 = document.getElementsByClassName("N2");
+            var t = document.getElementById("t");
+            var sum = 40;
+            
+            for (var i=0; i<v.length; i++) {
+                if(v[i].value != arr[i]){
+                    sum -=10;
+                    v1[i].style.textDecoration = 'line-through';
+                    console.log(v1[i].innerHTML);
+                }
+            }
+            t.innerHTML = sum +"점";
+            if(t.innerHTML == "40점"){
+                t.innerHTML += " 합격하셨습니다.";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h2>치매 예방 프로그램</h2>
+    <hr>
+    <table>
+        <tbody>
+            <tr>
+                <td class="N2">5*6</td>
+                <td><input typr="text" class="N1"></td>
+            </tr>
+            <tr>
+                <td class="N2">7+5*3</td>
+                <td><input typr="text" class="N1"></td>
+            </tr>
+            <tr>
+                <td class="N2">23*2</td>
+                <td><input typr="text" class="N1"></td>
+            </tr>
+            <tr>
+                <td class="N2">35-7</td>
+                <td><input typr="text" class="N1"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="채점" onclick="cli()"></td>
+                <td><p id="t"></p></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

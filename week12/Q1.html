@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1</title>
+    <script>
+        function chageLangSelect(){
+            var se = document.getElementById("se");
+            var selectValue = se.options[se.selectedIndex].value;
+            if (selectValue != ""){
+                window.open(selectValue, "myWin", "width=800,height=300");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <h2>옵션 선택으로 사이트 접속</h2>
+    <p>윈도우 하나를 공유 합니다.</p>
+    <hr>
+    <p>접속할 사이트</p>
+    <select id="se" onchange="chageLangSelect()">
+        <option value="">사이트 선택</option>
+        <option value="https://www.oracle.com">오라클</option>
+        <option value="https://www.naver.com">네이버</option>
+        <option value="https://www.google.co.kr">구글</option>
+    </select>
+</body>
+
+</html>

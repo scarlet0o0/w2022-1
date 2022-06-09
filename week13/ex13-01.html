@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 예제</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('p').css('backgroundColor','orange');
+            $('p').css('height','30');
+            $('p').css('width',function(i){
+                var value = 50;
+                i++;
+                value += 30 * i;
+                return value;
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>Web Programming !</h3>
+    <hr>
+    <p>HTML5</p>
+    <p>CSS3</p>
+    <p>자바스크립트</p>
+</body>
+</html>

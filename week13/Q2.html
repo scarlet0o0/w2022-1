@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box1').css('width', '10em');
+            $('#box1').css('border', '1px solid black');
+            $('#box1').css('text-align', 'center');
+            $('#box1').css('padding', '4em');
+        });
+        function f(){
+            $('#box1').css('padding', '1em');
+            $('#box1').css('border-radius', '3px 3px');
+            $('#box1').css('box-shadow', '5px -5px grey');
+        };
+    </script>
+</head>
+<body>
+    <h3>What Can JavaScript Do?</h3>
+    <div id="box1"> 자바스크립트 입문 </div><br> 
+     <button id="b1" onclick="f()"> 스타일 변경</button>
+</body>
+
+  
+
+</html>

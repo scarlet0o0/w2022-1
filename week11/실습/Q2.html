@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2</title>
+    <script>
+        function checkFilled() {
+            var obj = document.getElementById("name");
+            if (obj.value == "") {
+                alert("필드가 비어있네요");
+            }
+        }
+    </script>
+</head>
+
+<body onload="document.getElementById('name').focus();">
+    <form>
+        이름 <input type="text" id="name">
+        <input type="button" value="확인" onclick="checkFilled()">   
+    </form>
+</body>
+
+</html>
